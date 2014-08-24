@@ -1,0 +1,134 @@
+
+/* дружим поиск АЛГ с меню */
+
+#leavesearch_btn { font-size: 11px !important; visibility: hidden; }
+#leavesearch { width: 625px !important; z-index: 41  !important; }
+	#forum_live_search { width: 115px !important;}
+	#topic_live_search { width: 115px !important;}
+	#user_live_search { width: 90px !important;}
+	#leavesearch_btn_close { padding: 10px 3px 2px !important;}
+.acResults { box-shadow: 3px 3px 3px 0px #000 !important; z-index: 42 !important; }
+
+
+/* общие элементы */
+
+#leavesearch,
+#leavesearch_btn,
+ul.ldd_menu > li > span {
+	color: #536482;
+	background:linear-gradient(to top, #e1ebf2, #ffffff) !important;
+	border-bottom-left-radius: 23px !important;
+	border-top-right-radius: 23px !important;
+	border-bottom-right-radius: 0px !important;
+	box-shadow: 3px 3px 3px 0px #000 !important;
+	height: 25px !important;
+	line-height: 25px !important;
+}
+
+.extended-ControlsMenu {
+	margin-left: 0px;
+	opacity: 0.0;
+	top: 0px;
+	visibility: hidden;
+	z-index: 40 !important;
+}
+
+.extended-ControlsAll {
+	visibility: visible;
+}
+
+
+/* настраиваем меню */
+
+#extended-Menu {
+	margin-left: 0px;
+	position: fixed;
+	top: 0px;
+		-x-visibility: hidden; 
+	z-index: 40;
+}
+	ul.ldd_menu {
+		border-radius: 7px;
+		display: block;
+		height: 25px;
+		list-style: none outside none;
+		margin-top: 0px;
+		padding-top: 0px;
+	}
+	ul.ldd_menu .ldd_submenu {
+		background: #e1ebf2;
+		border-bottom-left-radius: 7px;	left:0px;
+		border-top: 1px solid #ffffff;
+		box-shadow: 3px 3px 3px 0px #000;
+		display: none;
+		font-size: 10px;
+		position: absolute;
+		top: 25px;
+		width: 550px;
+		z-index: 41;
+	}
+		ul.ldd_menu a{ text-decoration: none; }
+		ul.ldd_menu > li { float: left; padding-right: 0px; position: relative; }
+			ul.ldd_menu > li > span {
+				cursor: default;
+				float: left;
+				font-size: 11px;
+				font-weight: bold;
+				padding: 0px 20px;
+				text-shadow: 0px 0px 1px #fff;
+				word-wrap: normal;
+			}
+		ul.ldd_menu ul {
+			border-left: 1px solid #ffffff;
+			float: left;
+			list-style: none;
+			margin: 20px 0px 10px 30px;
+			padding: 10px;
+		}
+			ul.ldd_menu ul li a{
+				color: #536482;
+				font-family: Arial, serif;
+				font-size: 10px;
+				line-height: 20px;
+				padding: 1px 3px;
+			}
+			ul.ldd_menu ul li a:hover{
+				background: #fff;
+				box-shadow: 0px 0px 2px #333;
+					-moz-box-shadow: 0px 0px 2px #333;
+					-webkit-box-shadow: 0px 0px 2px #333;
+			}
+		li.ldd_heading{
+			color: #105289;
+			font-size: 12px;
+			font-weight: bold;
+			padding: 0px 0px 10px 0px;
+		}
+
+@media screen and (max-width: 1265px) {
+	#extended-BottomRightControls, #extended-TopRightControls { visibility: hidden !important; }
+	#extended-ShowHideMenuBtn { margin-left: 5px; }
+}
+
+@media screen and (max-width: 700px) {
+	.extended-ControlsAll, .extended-ControlsMenu { visibility: hidden !important; }
+}
+
+
+/*
+a.ldd_subfoot{
+	background-color:red;
+	color:#444;
+	display:block;
+	clear:both;
+	padding:15px 20px;
+	text-transform:uppercase;
+	font-family: Arial, serif;
+	font-size:12px;
+	text-shadow:0px 0px 1px #fff;
+	-moz-box-shadow:0px 0px 2px #777 inset;
+	-webkit-box-shadow:0px 0px 2px #777 inset;
+	-box-shadow:0px 0px 2px #777 inset;
+}
+*/
+

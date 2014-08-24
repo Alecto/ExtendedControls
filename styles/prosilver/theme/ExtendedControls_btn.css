@@ -1,0 +1,155 @@
+
+
+/* адаптивная кнопка вверх-вниз слева */
+
+#top-link {
+	background: linear-gradient(to right, #e1ebf2, #f5f7fa);
+	cursor: pointer;
+	display: none;
+	left: 0px;
+	opacity: 0.2;
+		-moz-transition-property: opacity; -moz-transition-duration: 1s; -moz-transition-delay: 0.3s;
+		-webkit-transition-property: opacity; -webkit-transition-duration: 1s; -webkit-transition-delay: 0.3s;
+		-o-transition-property: opacity; -o-transition-duration: 1s; -o-transition-delay: 0.3s;
+		transition-property: opacity; transition-duration: 1s; transition-delay: 0.3s;
+	overflow: hidden;
+	padding: 0;
+	position: fixed;
+	top: 0px;
+	z-index: 1;
+}
+#top-link:hover{
+	opacity: 1.0;
+		-moz-transition-property: opacity; -moz-transition-duration: 1s; -moz-transition-delay: 0.3s;
+		-webkit-transition-property: opacity; -webkit-transition-duration: 1s; -webkit-transition-delay: 0.3s;
+		-o-transition-property: opacity; -o-transition-duration: 1s; -o-transition-delay: 0.3s;
+		transition-property: opacity; transition-duration: 1s; transition-delay: 0.3s;
+}
+	#top-link a {
+		color: #105289;
+		display: block;
+		font-size: 11px;
+		font-weight: bold;
+		margin: 0 5px 5px;
+		padding: 5px 0;
+		text-align: center;
+		text-decoration: none !important;
+		width: 12px;
+	}
+		#topicon,
+		#backicon {
+			border-left: 8px solid transparent;
+			border-right: 8px solid transparent;
+			margin-top: 4px;
+			margin-left: -4px;
+			position: absolute;
+		}
+		#topicon { border-bottom: 8px solid #105289; }
+		#backicon { border-top: 8px solid #105289; position: absolute; }
+		#text { padding-left: 15px; position: absolute; word-wrap: normal; }
+
+
+/* Кнопка включения/выключения меню */
+
+#extended-ShowHideMenuBtn {
+	cursor: pointer;
+	background-color: #ffffff;
+	background-image: url("/ext/alecto/ExtendedControls/images/btn_show_hide_menu.png");
+	background-position: center center;
+	background-repeat: no-repeat;
+	border: 1px solid #e6e9ed;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	box-shadow: 1px 2px 2px 0 #000;
+	height: 10px;
+	margin-left: -30px;
+	margin-top: -29px;
+	opacity: 0.3;
+	padding-top: 0px;
+		-moz-transition-property: padding-top; -moz-transition-duration: 0.5s;
+		-webkit-transition-property: padding-top; -webkit-transition-duration: 0.5s;
+		-o-transition-property: padding-top; -o-transition-duration: 0.5s;
+		transition-property: padding-top; transition-duration: 0.5s;
+	position: absolute;
+	visibility: hidden;
+	width: 20px;
+}
+
+#extended-ShowHideMenuBtn:hover {
+	opacity: 1.0 !important;
+	padding-top: 8px;
+	-moz-transition-property: padding-top; -moz-transition-duration: 0.5s; -moz-transition-delay: 0.7s;
+		-webkit-transition-property: padding-top; -webkit-transition-duration: 0.5s; -webkit-transition-delay: 0.7s;
+		-o-transition-property: padding-top; -o-transition-duration: 0.5s; -o-transition-delay: 0.7s;
+		transition-property: padding-top; transition-duration: 0.5s; transition-delay: 0.7s;
+}
+
+
+/* блок дополнительных кнопок справа */
+
+#extended-BottomRightControls { bottom: 26px; }
+#extended-TopRightControls { top: 12px; }
+#extended-BottomRightControls,
+#extended-TopRightControls {
+	-x-background-color: #ffffff;
+	-x-border: 1px solid #e6e9ed;
+	-x-border-radius: 8px;
+	float: right;
+	padding: 15px 7px 15px 10px;
+	position: fixed;
+	right: 0px;
+	visibility: hidden;
+	z-index: 10;
+}
+	#extended-BottomRightControls img,
+	#extended-TopRightControls  img {
+		border-radius: 5px;
+		height: 24px;
+		opacity: 0.5;
+			-moz-transition-property: opacity; -moz-transition-duration: 0.5s;
+			-webkit-transition-property: opacity; -webkit-transition-duration: 0.5s;
+			-o-transition-property: opacity; -o-transition-duration: 0.5s;
+			transition-property: opacity; transition-duration: 0.5s;
+		user-select: none;
+			-ms-user-select: none;
+			-moz-user-select: none;
+			-khtml-user-select: none;
+			-webkit-user-select: none;
+		width: 24px;
+	}
+	#extended-BottomRightControls img:hover,
+	#extended-TopRightControls img:hover {
+		opacity: 1.0;
+			-moz-transition-property: opacity; -moz-transition-duration: 0.5s;
+			-webkit-transition-property: opacity; -webkit-transition-duration: 0.5s;
+			-o-transition-property: opacity; -o-transition-duration: 0.5s;
+			transition-property: opacity; transition-duration: 0.5s;
+		}
+
+@media screen and (max-width: 1350px) {
+	#text { display: none; }
+}
+
+
+@media screen and (max-width: 1320px) {
+	.share42init { display: none;}
+}
+
+
+/* share42 */
+#share42 { left: 0; }
+	#share42 span {
+		opacity: 0.5;
+			-moz-transition-property: opacity; -moz-transition-duration: 0.5s;
+			-webkit-transition-property: opacity; -webkit-transition-duration: 0.5s;
+			-o-transition-property: opacity; -o-transition-duration: 0.5s;
+			transition-property: opacity; transition-duration: 0.5s;
+	}
+	#share42 span:hover {
+		opacity: 1.0;
+			-moz-transition-property: opacity; -moz-transition-duration: 0.5s;
+			-webkit-transition-property: opacity; -webkit-transition-duration: 0.5s;
+			-o-transition-property: opacity; -o-transition-duration: 0.5s;
+			transition-property: opacity; transition-duration: 0.5s;
+	}
+
