@@ -61,9 +61,7 @@
 
 
 	function ExtendeMenuResize() {
-		if ($("#leavesearch_btn")){ L = $('#leavesearch_btn').outerWidth(); } // проверяем, включен ли поиск
-
-		W = $('#wrap').outerWidth() - $('#ldd_menu').outerWidth() - $('#ldd_menu').offset().left - L;    // W = контент - ширина М - положение М
+		W = $('#wrap').outerWidth() + $('#wrap').offset().left - $('#ldd_menu').outerWidth() - $('#ldd_menu').offset().left;    // W = контент - ширина М - положение М
 		S = 150; // $(this).width(); 				// S = ширина элемента SPAN
 		if (W > 510) { W = 510; } 			// если места достаточно для формы более 510, делаем 510
         		else { if (W < S) { W = S; } }		// если мало места менее 510, вычисляем новый размер
