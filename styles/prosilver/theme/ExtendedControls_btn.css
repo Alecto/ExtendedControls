@@ -62,6 +62,7 @@
 	border-bottom-right-radius: 7px;
 	box-shadow: 1px 2px 2px 0 #000;
 	height: 10px;
+	margin-left: 1px;
 	opacity: 0.3;
 	padding-top: 0px;
 		-moz-transition-property: padding-top; -moz-transition-duration: 0.5s;
@@ -69,7 +70,6 @@
 		-o-transition-property: padding-top; -o-transition-duration: 0.5s;
 		transition-property: padding-top; transition-duration: 0.5s;
 	position: fixed;
-	right: 8px;
 	top: 0;
 	visibility: hidden;
 	width: 20px;
@@ -91,19 +91,14 @@
 #extended-TopRightControls { top: 12px; }
 #extended-BottomRightControls,
 #extended-TopRightControls {
-	-x-background-color: #ffffff;
-	-x-border: 1px solid #e6e9ed;
-	-x-border-radius: 8px;
-	float: right;
-	padding: 15px 7px 15px 10px;
+	padding: 30px 0px 2px 0px;
 	position: fixed;
-	right: 0px;
 	visibility: hidden;
 	z-index: 10;
 }
 	#extended-BottomRightControls img,
 	#extended-TopRightControls  img {
-		border-radius: 5px;
+		-x-border-radius: 5px;
 		height: 24px;
 		opacity: 0.5;
 			-moz-transition-property: opacity; -moz-transition-duration: 0.5s;
@@ -129,21 +124,27 @@
 
 /* share42 */
 
-#share42 { left: 0; }
-	#share42 span {
-		opacity: 0.5;
-			-moz-transition-property: opacity; -moz-transition-duration: 0.5s;
-			-webkit-transition-property: opacity; -webkit-transition-duration: 0.5s;
-			-o-transition-property: opacity; -o-transition-duration: 0.5s;
-			transition-property: opacity; transition-duration: 0.5s;
-	}
-	#share42 span:hover {
-		opacity: 1.0;
-			-moz-transition-property: opacity; -moz-transition-duration: 0.5s;
-			-webkit-transition-property: opacity; -webkit-transition-duration: 0.5s;
-			-o-transition-property: opacity; -o-transition-duration: 0.5s;
-			transition-property: opacity; transition-duration: 0.5s;
-	}
+#share42 {
+	opacity: 0.5;
+		-moz-transition-property: opacity; -moz-transition-duration: 0.5s;
+		-webkit-transition-property: opacity; -webkit-transition-duration: 0.5s;
+		-o-transition-property: opacity; -o-transition-duration: 0.5s;
+		transition-property: opacity; transition-duration: 0.5s;
+}
+#share42:hover {
+	opacity: 1.0;
+		-moz-transition-property: opacity; -moz-transition-duration: 0.5s;
+		-webkit-transition-property: opacity; -webkit-transition-duration: 0.5s;
+		-o-transition-property: opacity; -o-transition-duration: 0.5s;
+		transition-property: opacity; transition-duration: 0.5s;
+}
+	.share42-counter { display: none !important; }
+
+
+#extended-RightControlsWrap {
+	float: right;
+	margin-right: -25px;
+}
 
 
 /* адаптация под размеры окна */
@@ -152,17 +153,15 @@
 	#text { display: none; }
 }
 
-
-@media screen and (max-width: 1320px) {
-	.share42init { display: none; }
-}
-
-@media screen and (max-width: 1265px) {
+@media screen and (max-width: 1270px) {
 	#extended-BottomRightControls, #extended-TopRightControls { display: none; }
+	#extended-RightControlsWrap { margin-right: 0px; }
+	.share42init { display: none; }
 }
 
 @media screen and (max-width: 700px) {
 	.extended-ControlsAll, .extended-ControlsMenu { visibility: hidden !important; }
+	#extended-RightControlsWrap { display: none; }
 }
 
 
