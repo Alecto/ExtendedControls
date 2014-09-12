@@ -29,8 +29,10 @@
 
 
 	$(document).ready(function () {					// включаем блоки + меню
-		$('.extended-ControlsAll').css({opacity: 0.0, visibility: "visible"}).animate({opacity: '1.0'},1000);
-		showHideMenu();
+		setTimeout(function() {
+			$('.extended-ControlsAll').css({opacity: 0.0, visibility: "visible"}).animate({opacity: '1.0'},1000);
+			showHideMenu();
+		}, 1000);
 	});
 
 
@@ -66,9 +68,6 @@
 		if (W > 510) { W = 510; } 			// если места достаточно для формы более 510, делаем 510
         		else { if (W < S) { W = S; } }		// если мало места менее 510, вычисляем новый размер
 	}
-
-
-	$('.share42init').mouseover(function () { $('.share42-counter').attr('style', 'display: inline-block !important'); }).mouseout(function () { $('.share42-counter').attr('style', 'display: none !important'); });
 
 
 })(jQuery);                                                               // Avoid conflicts with other libraries
