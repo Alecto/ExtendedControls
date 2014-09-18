@@ -3,6 +3,7 @@
 
 	if ($("#leavesearch_btn")){			// проверяем, включен ли поиск
 		$('#leavesearch_btn').addClass('extended-ControlsMenu');
+		$('#leavesearch_btn').css({visibility: "hidden", display: "inherit"});
 		$('#extended-Menu').css('margin-left',$('#leavesearch_btn').outerWidth());	// подстраиваем положение меню под размеры поиска АЛГ
 	}
 
